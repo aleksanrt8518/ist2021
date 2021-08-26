@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        p{
+            padding: 0px;
+            margin: 0px;
+            font-size: 8pt;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/allItems">Pogledaj sve proizvode</a>
+        <a href="/addItem">Dodaj proizvod</a>
+    </nav>
+    <form action="/saveItem" method="post">
+        Naziv proizvoda: <input type="text" name="name" placeholder="Unesite naziv proizvoda"> 
+        <br>
+        <br>
+        Kategorija: <input type="text" name="category" placeholder="Unesite kategoriju proizvoda">
+        <br>
+        <br>
+        Cena: <input type="number" name="price" min="0" placeholder="Unesite cenu proizvoda">
+        <br>
+        <br>
+        Oznake: <input type="text" name="tags" placeholder="Unesite oznake proizvoda">
+        <br>
+        <br>
+        Opis: 
+        <br>
+        <textarea name="desc" minlength="10" maxlength="180"
+        rows="6" cols="33" placeholder="Unesite opis proizvoda"></textarea>
+        <br>
+        <p>Minimalan broj karaktera 10, maksimalan broj karaktera 180.</p>
+        <br>
+        <button type="submit">Dodaj proizvod</button>
+    </form>
+</body>
+</html>
